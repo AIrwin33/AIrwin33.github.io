@@ -3,11 +3,12 @@ html {
 }
 @font-face {
 	font-family: myralewayfont;
-	src: url(stylesheets/raleway/Raleway-Regular.ttf);
+	src: url(../stylesheets/raleway/Raleway-Regular.ttf);
 }
 body {
 	border: 2px solid black;
 	width:600px;
+	margin-left:50%;
 	border-radius: 1px;
 	vertical-align: middle;
 	font-family: myralewayfont;
