@@ -3,7 +3,7 @@ html {
 }
 @font-face {
 	font-family:myralewayfont;
-	src: url(/stylesheets/raleway/raleway-regular.ttf);
+	src: url(../airwin33.github.io/stylesheets/raleway/Raleway-Regular.ttf);
 }
 body {
 	border: 2px solid black;
