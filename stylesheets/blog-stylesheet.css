@@ -1,15 +1,42 @@
 html {
-	background-color: gray;
-
+	background-color: #EBE8E3;
+}
+@font-face {
+	font-family:myralewayfont;
+	src: url(../stylesheets/raleway/raleway-regular.ttf);
 }
 body {
-	width:800px;
-	margin-left: 15px;
+	border: 2px solid black;
+	width:600px;
+	border-radius: 1px;
+	font-family:Times;
+	vertical-align: middle;
 }
-#header{
-	height: 100px;
+#header {
+	background-color: #FFD257;
+	text-align: center;
+	vertical-align: middle;
+	font-family: myralewayfont;
+	width:600px;
+	height:100px;
+	margin-top:-20px;
+	border-bottom: 2px solid black;
 }
-#body {
-	margin-top: 15px;
-	margin-bottom: 15px;
+#title {
+	background-color:#84E8B1;
+	vertical-align: middle;
+	text-align: center;
+	font-family: myralewayfont;
+	width:600px;
+	height:100px;}
+#post {
+	background-color:#84E8B1;
+	vertical-align: middle;
+	text-align: center;
+	width:600px;
+	height:100px;
+}
+#footer {
+	border-top: 2px solid black;
+	position: relative;
 }
