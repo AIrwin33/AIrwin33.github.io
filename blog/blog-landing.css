@@ -3,7 +3,7 @@ html {
 }
 @font-face {
 	font-family:myralewayfont;
-	src: url(raleway-regular.ttf);
+	src: url(blog/Raleway-Regular.ttf);
 }
 body {
 	border: 2px solid black;
