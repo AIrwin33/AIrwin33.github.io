@@ -12,6 +12,7 @@ body {
 	vertical-align: middle;
 	font-family: myralewayfont;
 	margin: 0 auto;
+	margin-top: 10px;
 }
 #header {
 	background-color: #FFD257;
@@ -19,7 +20,6 @@ body {
 	width:600px;
 	height:100px;
 	padding-top: 15px;
-	margin-top:-20px;
 	border-bottom: 2px solid black;
 }
 #topbanner {
