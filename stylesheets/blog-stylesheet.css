@@ -3,13 +3,13 @@ html {
 }
 @font-face {
 	font-family:myralewayfont;
-	src: url(../stylesheets/raleway/raleway-regular.ttf);
+	src: url(../stylesheets/raleway/Raleway-Regular.ttf);
 }
 body {
 	border: 2px solid black;
 	width:600px;
 	border-radius: 1px;
-	font-family:Times;
+	margin: 0 auto;
 	vertical-align: middle;
 }
 #header {
