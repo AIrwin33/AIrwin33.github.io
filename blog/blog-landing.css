@@ -15,7 +15,7 @@ body {
 	margin-top: 10px;
 }
 #header {
-	background-color: #FFD257;
+	background-color: #A6CC4A;
 	text-align: center;
 	width:600px;
 	height:100px;
@@ -23,7 +23,7 @@ body {
 	border-bottom: 2px solid black;
 }
 #topbanner {
-	background-color:#E87C78;
+	background-color:#E85;
 	text-align: center;
 	width:600px;
 	height:30px;
@@ -31,7 +31,7 @@ body {
 	border-bottom: 2px solid black;
 }
 #aboutme {
-	background-color:#84E8B1;
+	background-color:#858471;
 	vertical-align: middle;
 	text-indent: 5px;
 	padding-top: 20px;
@@ -44,6 +44,7 @@ body {
 	border-top: 2px solid black;
 	position: relative;
 	text-align: center;
+	background-color: #A6CC4A;
 }
 div div {
 	display:inline;
