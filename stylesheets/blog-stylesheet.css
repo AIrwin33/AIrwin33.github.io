@@ -13,7 +13,7 @@ body {
 	vertical-align: middle;
 }
 #header {
-	background-color: #FFD257;
+	background-color: #A6CC4A;
 	text-align: center;
 	vertical-align: middle;
 	font-family: myralewayfont;
@@ -23,14 +23,14 @@ body {
 	border-bottom: 2px solid black;
 }
 #title {
-	background-color:#84E8B1;
+	background-color:#E85;
 	vertical-align: middle;
 	text-align: center;
 	font-family: myralewayfont;
 	width:600px;
 	height:100px;}
 #post {
-	background-color:#84E8B1;
+	background-color:#858471;
 	vertical-align: middle;
 	text-align: center;
 	width:600px;
@@ -39,4 +39,5 @@ body {
 #footer {
 	border-top: 2px solid black;
 	position: relative;
+	background-color: #A6CC4A;
 }
