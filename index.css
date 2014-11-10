@@ -1,0 +1,45 @@
+html {
+	background-color: #EBE8E3;
+}
+@font-face {
+	font-family: myralewayfont;
+	src: url(stylesheets/raleway/Raleway-Regular.ttf);
+}
+body {
+	border: 2px solid black;
+	width:600px;
+	border-radius: 1px;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+#header {
+	background-color: #A6CC4A;
+	text-align: center;
+	font-family: myralewayfont;
+	vertical-align: middle;
+	padding-top: 15px;
+	width:600px;
+	height:100px;
+	border-bottom: 2px solid black;
+}
+#title {
+	background-color:#E85;
+	vertical-align: middle;
+	text-align: center;
+	font-family: myralewayfont;
+	width:600px;
+	height:100px;
+}
+#post {
+	background-color:#858471;
+	text-align: center;
+	padding-top: 15px;
+	width:600px;
+	height:50px;
+}
+#footer {
+	border-top: 2px solid black;
+	position: relative;
+	text-align: center;
+	background-color: #A6CC4A;
+}
