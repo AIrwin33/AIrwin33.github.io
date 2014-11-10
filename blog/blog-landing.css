@@ -44,6 +44,8 @@ body {
 	border-top: 2px solid black;
 	position: relative;
 	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	background-color: #A6CC4A;
 }
 div div {
