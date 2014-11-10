@@ -17,9 +17,9 @@ body {
 	text-align: center;
 	font-family: myralewayfont;
 	vertical-align: middle;
+	padding-top: 15px;
 	width:600px;
 	height:100px;
-	margin-top:-20px;
 	border-bottom: 2px solid black;
 }
 #title {
@@ -32,13 +32,14 @@ body {
 }
 #post {
 	background-color:#858471;
-	vertical-align: middle;
 	text-align: center;
+	padding-top: 15px;
 	width:600px;
-	height:100px;
+	height:50px;
 }
 #footer {
 	border-top: 2px solid black;
 	position: relative;
+	text-align: center;
 	background-color: #A6CC4A;
 }
