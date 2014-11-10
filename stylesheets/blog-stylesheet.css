@@ -15,29 +15,37 @@ body {
 #header {
 	background-color: #A6CC4A;
 	text-align: center;
-	vertical-align: middle;
+	padding-top: 15px;
 	font-family: myralewayfont;
 	width:600px;
 	height:100px;
-	margin-top:-20px;
 	border-bottom: 2px solid black;
 }
 #title {
 	background-color:#E85;
-	vertical-align: middle;
 	text-align: center;
 	font-family: myralewayfont;
 	width:600px;
-	height:100px;}
-#post {
-	background-color:#858471;
+	height:100px;
+	border-bottom: 2px solid black;
+	padding-top:15px;
+}
+#body {
+	background-color: #858471;
 	vertical-align: middle;
 	text-align: center;
+	padding-top:20px;
+	padding-bottom:20px;
 	width:600px;
-	height:100px;
 }
 #footer {
 	border-top: 2px solid black;
-	position: relative;
+	text-align: center;
 	background-color: #A6CC4A;
+}
+div ul {
+	text-align: left;
+}
+div p {
+	text-align: left;
 }
