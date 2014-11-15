@@ -33,7 +33,6 @@ body {
 #body {
 	background-color: #858471;
 	vertical-align: middle;
-	text-align: center;
 	padding-top:20px;
 	padding-bottom:20px;
 	width:600px;
@@ -49,3 +48,4 @@ div ul {
 div p {
 	text-align: left;
 }
+pre code {text-align: left}
