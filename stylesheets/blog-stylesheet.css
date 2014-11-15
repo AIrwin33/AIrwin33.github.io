@@ -47,5 +47,6 @@ div ul {
 }
 div p {
 	text-align: left;
+	display: block;
 }
 pre code {text-align: left}
