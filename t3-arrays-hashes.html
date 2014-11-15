@@ -13,7 +13,7 @@
 			
 			<p>Hashes meanwhile store objects in pairs. Hashes point from one object (a key) to another (a value) and vice-versa. Hashes do not necessarily need to be ordered and unlike arrays, do not have specific integers assigned to their place in the collection. Hashes may be easier to manipulate because they have word assignments ralted to the information you are organizing. When dealing with large Arrays, it may be more beneficial to use hashes to make it easier to find the objects you are looking for.</p>
 			
-			<p>Lets look at an array that organizes abbreviations of New England states:</p>
+			<p>Lets look at an array that organizes abbreviations of New England states, because sometimes we need to remember the one time Massachusetts comes before Maine:</p>
 			
 			<pre>
 				<code>
@@ -24,11 +24,11 @@
 			<p>Based on the organization of this array, the value "CT" is assigned the integer 0 because it is the zeroeth integer in the array.</p>
 			
 			
-			<p>You would "call" the abbreviation "CT" by typing in this code:</p>
+			<p>You would "call" the abbreviation "MA" by typing in this code:</p>
 			
 			<pre>
 				<code>
-		puts array[0]
+		puts array[1]
 				</code>
 			</pre>
 			
@@ -36,8 +36,8 @@
 
 			<pre>
 				<code>
-		hash = {"Connecticut"=>"CT" 
-		"Massachusetts"=>"MA" 
+		hash = {"Connecticut"=>"CT", 
+		"Massachusetts"=>"MA", 
 		"Maine"=>"ME"}
 				</code>
 			</pre>
