@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head><link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+		<title>Comparing Arrays and Hashes in Ruby</title>
+	</head>
+	<body>
+		<div id="header"><h1>Welcome to the Blog</h1></div>
+		<div id="title">Comparing Arrays and Hashes in Ruby<br/> Technical Blog<br/> Andrew Irwin<br/> November 14, 2014</div>
+		<div id="body">Prompt:Write a blog post that describes and compares arrays and hashes.<br/> 
+
+			Arrays and hashes are both ways of storing and organizing code objects. Arrays are ordered collectios of objects. You can select objects in an array based on a consistent numerical index. Any object can be stored in an array including other arrays and hashes. While both arrays and hashes store information, they do so in different ways. Another way of thinking about it is that arrays are hashes that happen to store consecutive integers.<br/>
+
+			Hashes meanwhile store objects in pairs. Hashes point from one object (a key) to another (a value) and vice-versa. Hashes do not necessarily need to be ordered and unlike arrays, do not have specific integers assigned to their place in the collection. Hashes may be easier to manipulate because they have word assignments ralted to the information you are organizing. When dealing with large Arrays, it may be more beneficial to use hashes to make it easier to find the objects you are looking for.<br/>
+
+			Lets look at an array that organizes abbreviations of New England states:
+
+			<pre>
+			<code>array = ["CT", "MA", "ME", "NH", "RI", "VT"]</code>
+			</pre>
+
+			Based on the organization of this array, the value "CT" is assigned the integer 0 because it is the zeroeth integer in the array.<br/>
+
+			You would "call" the abbreviation "CT" by typing in this code:
+
+			<pre><code>puts array[0]</code></pre>
+
+			But how would a hash look if we wanted to, say, organize New England states by their corresponding abbreviation? As I mentioned before Hashes include both a key (similar to an index in Arrays) and a value assigned to the key.<br/>
+
+			<pre><code>hash = {"Connecticut"=>"CT"
+			"Massachusetts"=>"MA"
+			"Maine"=>"ME"}</code></pre>
+
+			To call on specific keys and values in a hash, you would set up your code like this:
+
+			<pre><code>hash["Massachusetts"]</code></pre>
+
+			This calls the value for the key "Massachusetts".
+
+			As you can see, if we had a list of all 50 states and their abbreviations, it could be too confusing to think "which integer is assigned to the state of Nebraska?"<br/>
+
+			Ultimately, it's your choice whether to use Arrays or Hashes. As you become more comfortable with them and realize their full capabilities, you can decide which one to use for each situation.
+
+
+		</div>
+		<div id="footer"><a href="index.html"><img src="home.png" height="27" width="27"></a></div>
+	</body>
+
+</html>
