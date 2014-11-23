@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head><link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+		<title>Intro to the group_by Enumerable method</title>
+	</head>
+	<body>
+		<div id="header"><h1>Welcome</h1></div>
+		<div id="title">How to use the enumerable method group_by<br/>Technical Blog<br/> Andrew Irwin<br/> November 22, 2014</div>
+		<div id="body">
+			<p>The group_by method takes an object and block and returns a hash that contains groups organized by whatever designation you assigned(size, length, alphabetical). This is a simple way of taking an array and passing it to a hash. The elements of the array are then passed to the values of the hash, while whatever organizational assignment was given passed to a key.</p>
+			<p>The code should look something like this:</p>
+			<p>
+				<code>
+	object.group_by {|object| block}
+				</code>
+			</p>
+			<p>Lets say we wanted to sort an array of types of fruit by the length of the string.</p>
+			<p>Example:</p>
+			<p>
+				<code>
+		
+	fruit = ["apples", "tomatoes", "grapefruit", "bananas", "papayas", "mangoes", "blackberries", "grapes"] <br/>
+	Note on sorting: don't forget that the computer organizes uppercase and lowercase words differently. make sure your strings are lowercase or use the downcase method before sorting.<br/>
+	p fruit.group_by {|fruit| fruit.length}<br/>
+	The result groups each fruit by its string length.<br/>
+	{6=>["apples", "grapes"], 8=>["tomatoes"], 10=>["grapefruit"], 7=>["bananas", "papayas", "mangoes"], 12=>["blackberries"]}
+					
+				</code>
+			</p>
+			<p>What other situations are appropriate to use the group_by enumerable method? Looking through what other people in the cohort did for Challenge #6, I noticed that almost everyone had code that was completely different. Did anyone look at using the group_by method to organize the cohort by various methods available for the block?</p>
+			
+		</div>
+		<div id="footer"><a href="index.html"><img src="home.png" height="27" width="27"></a></div>
+	</body>
+
+</html>
