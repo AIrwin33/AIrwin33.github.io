@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head><link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+		<title>Intro to Classes</title>
+	</head>
+	<body>
+		<div id="header"><h1>Welcome</h1></div>
+		<div id="title">What does it cost to get a beer around here?<br/>An introduction to classes in Ruby<br/>Technical Blog<br/> Andrew Irwin<br/> November 28, 2014</div>
+		<div id="body">
+			<p>So you've worked with objects and methods in Ruby and gotten familiar with them. What if we have a series of objects of the same type and want to define parameters based on a set of methods? Using <em>class</em>, Rubyists can organize objects by a class and then define methods that operate on that class.</p>
+			<p>To see how this works, lets look at a class called Beer, which tells you how much a beer costs.</p>
+			<p>
+				<code>
+class Beer
+	def initialize(name, location)
+		@name = name
+		@location = location
+	end
+	def set_price(amount)
+		@price = amount
+		puts "That beer costs $#{@price}."
+	end
+	def price
+		@price
+	end
+	def no_way
+		if @price > 10
+		puts "No way! thats way too expensive."
+		else 
+		puts "Alright I'll take it."
+		end
+	end
+end
+
+beer = Beer.new("Goose Island", "Chicago, IL")
+beer.set_price(7)
+beer.no_way
+
+
+				</code>
+			</p>
+			<p>Instance variables allow you to remember the state that an object is in so that it can be called, printed out, etc. the variable can retain its value after the method that initialized the variable is terminated. You can create an instance variable using the "@". As you can see in the instance method no_way, the variable @price continues to pass even though it is outside the method that initiated it.</p>
+			<p>Instance methods enable developers to call a method within a class that may have a specific function. Look over the method no_way and think about what it is doing. Now look down to the driver tests. you can see that we have established "beer" to equal a new beer that is initialized with a name and location. Below that we are calling the instance method no_way by typing "beer.no_way"</p>
+			<p>This is only the beginning of what you can do with classes in Ruby, but I hope this gave you a good introduction.</p>
+			
+			
+		</div>
+		<div id="footer"><a href="index.html"><img src="home.png" height="27" width="27"></a></div>
+	</body>
+
+</html>
