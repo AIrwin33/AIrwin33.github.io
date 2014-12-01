@@ -35,9 +35,7 @@
 	beer = Beer.new("Goose Island", "Chicago, IL")
 	beer.set_price(7)
 	beer.no_way
-
-
-				</pre>
+			</pre>
 			</p>
 			<p>Instance variables allow you to remember the state that an object is in so that it can be called, printed out, etc. the variable can retain its value after the method that initialized the variable is terminated. You can create an instance variable using the "@". As you can see in the instance method no_way, the variable @price continues to pass even though it is outside the method that initiated it.</p>
 			<p>Instance methods enable developers to call a method within a class that may have a specific function. Look over the method no_way and think about what it is doing. Now look down to the driver tests. you can see that we have established "beer" to equal a new beer that is initialized with a name and location. Below that we are calling the instance method no_way by typing "beer.no_way"</p>
