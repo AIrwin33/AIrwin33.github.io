@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head><link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+		<title>Comparing Ruby Classes and Javascript Functions</title>
+	</head>
+	<body>
+		<div id="header"><h1>Welcome</h1></div>
+		<div id="title">Comparing Ruby Classes and Javascript Functions<br/>Technical Blog<br/>Andrew Irwin<br/> December 11, 2014</div>
+		<div id="body">
+			<p>Just when we all thought we were comfortable with Ruby and working through some pretty complex problems, DBC pulled fast one and dropped JavaScript on us!</p>
+			<p>By now we are very familiar with classes and instance methods in Ruby. How might we set up the same code in JS to perform the same output? 
+			</p>
+			<p>Lets look at a few lines of code in Ruby and JavaScript that are doing the same thing. For the examples I considered how we would set up a class/function ask if a dish is clean and say if it is clean or dirty. If the dish is dirty, the code washes the dish and says that it is clean.
+			</p>
+			<pre>
+				<code>
+			class Dishes
+				def initialize(dish)
+				@dish = dish;
+				end
+
+				def dirty
+					if true
+						puts "Lets wash this dish!"
+						wash
+					else
+						return "This dish is already clean."
+					end
+				end
+
+				def wash
+					puts "This dish is clean now!"
+				end
+			end
+
+			plate = Dishes.new("plate")
+			p plate.dirty
+				</code>
+			</pre>
+			<p>That was pretty straight forward. Now pay attention to how some of the syntax changes when I move this code into Javascript. How are different strings returned? How are functions called?</p>
+			<pre>
+				<code>
+ 				
+ 			function dishes(dish) {
+				this.dish = dish;
+
+				this.dirty = function(){
+					if (true) {
+						console.log("Lets wash this dish");
+						this.wash();
+					}
+					else {
+						console.log("This dish is already clean.");
+					}
+				}
+
+				this.wash = function() {
+					console.log("This dish is clean now!");
+				}
+			}
+
+
+			plate = new dishes("plate");
+			plate.dirty();
+
+
+				</code>
+			</pre>
+			<p>As you can see, both pieces of code output the same results while using different syntax. Can you pick out the differences and similarities? What are some things to remember as you transition from Ruby to JavaScript? While not required all the time, it is a best practice to include semi-colons after each line in JS. Similar to having to close out def and class, the curly braces act as a way of closing out a certain statement.
+			</p>
+			<p>When I worked on converting the Ruby code to JavaScript, I ran into a few issues that are important to note when working in JS. First, using a method with a question mark at the end is a big no-no in JavaScript. Also, while I use console.log to call the various string prompts, to call functions, I simply write that function and add a parenthesis at the end.</p>
+		</div>
+		<div id="footer"><a href="index.html"><img src="home.png" height="27" width="27"></a></div>
+	</body>
+
+</html>
