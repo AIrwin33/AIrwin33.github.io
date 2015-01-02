@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<HTML>
+  <header>
+    <link type = "text/css" rel = "stylesheet" href = "cheat-sheet.css">
+    <title> Intro to SQL with Cheat Sheet </title>
+  </header>
+  <body>
+    <div id = "title">
+     <h1>Intro to SQL with Cheat Sheet</h1>
+    </div>
+    <div id = "by">
+      <h5>by: Flori Garcia-Vicente and Andrew Irwin</h5>
+    </div>
+    <div id = "explain">
+      <p>SQL (pronounced sequel) stands for structured query language. It is a special purpose programming language designed to manage and communicate with data held in a relational database system (RDBMS). </p>
+    </div>
+    <div id = "database_example">
+      <img src="states_regions.png">
+    </div>
+    <div id = "cheatsheet">
+      <h4>SELECT</h4>
+      <code><pre>
+        SELECT column_name,column_name
+        FROM table_name;
+      </pre></code><br/>
+      <code><pre>
+        SELECT state_name, population
+        FROM states;
+      </pre></code>
+      <p>The code above will return the states table with two columns: state_name and population.</p>
+      <h4>WHERE</h4>
+      <code><pre>
+        SELECT column_name, column_name
+        FROM table_name
+        WHERE column_name operator value;
+      </pre></code><br/>
+      <code><pre>
+        SELECT state_name, population_density, population
+        FROM states
+        WHERE population > 2000000;
+      </pre></code>
+      <p>This code will return the states table with three columns: state_name, population_density, and population for only the states with a population greater than 2,000,000.</p>
+      <h4>ORDER BY</h4>
+      <code><pre>
+        SELECT column_name, column_name
+        FROM table_name
+        ORDER BY column_name ASC|DESC
+      </pre></code><br/>
+      <code><pre>
+        SELECT state_name, population_density, population
+        FROM states
+        WHERE population > 2000000
+        ORDER BY population ASC;
+      </pre></code>
+      <p>This code will return the states table with three columns: state_name, population_density, and population for only the states with a population greater than 2,000,000 and orders the table in ascending order by population size.</p>
+      <h4>Wildcard</h4>
+      <ul>
+        <li>% - A substitute for zero or more characters</li>
+        <li>_ - A substitute for a single character</li>
+        <li>[charlist] - Sets and ranges characters to match</li>
+        <li>[^charlist] or [!charlist] - Matches only a character not specified within the brackets</li>
+      </ul>
+      <code><pre>
+        SELECT region_name
+        FROM regions
+        WHERE region_name LIKE '%South%';
+      </pre></code>
+      <p>This code will return the regions table with the column region_name for regions that include the word South.</p>
+      <h4>AND/OR</h4>
+      <code><pre>
+        SELECT state_name, region_id
+        WHERE population > 2000000
+        AND region_id > 5;
+      </pre></code>
+      <p>This code will return the states table with two columns state_name and region_id, where population is greater than 2000000 and region_id is greater than 5.</p>
+      <code><pre>
+        SELECT state_name, region_id
+        WHERE population > 2000000
+        OR region_id > 5;
+      </pre></code>
+      <p>This code will return the states table with two columns state_name and region_id, where population is greater than 2000000 OR region_id is greater than 5.</p>
+      <h4>Inner Join</h4>
+      <code><pre>
+        SELECT regions.region_name, states.state_name
+        FROM regions
+        INNER JOIN states
+        ON regions.id=states.region_id
+        ORDER BY region_id;
+      </pre></code>
+      <p>This code returns a table with two columns, region_name and state_name, in ascending order by region_id.</p>
+    </div>
+    <div id = "top">
+      <a href = "cheatsheet.html">Back to top</a>
+    </div>
+  </body>
+</html>

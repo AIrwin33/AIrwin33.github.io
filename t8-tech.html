@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head><link rel="stylesheet" type="text/css" href="stylesheets/blog-stylesheet.css">
+		<title>SQL Query Optimization</title>
+	</head>
+	<body>
+		<div id="header"><h1>Welcome</h1></div>
+		<div id="title">SQL Query Optimization<br/>Technical Blog<br/>Andrew Irwin<br/> December 18, 2014</div>
+		<div id="body">
+			<p>Having dabbled in SQL earlier this week, I wanted to learn more about how I could use SQl more efficiently. Similar to code refactoring that we learned about in Ruby and JavaScript, SQl query optimization can cut down on the amount of time it takes to run a query, as well as look cleaner and more concise.</p>
+			<p>So far, we have just learned about SELECT queries, so I'll just focus on those for this blog post.</p>
+			<p>The first SQL SELECT statement I learned was used to select all fo the columns in a given table. for shorthand, you can use '*' to represent all of the these columns. Instead, type out all of the columns before calling FROM and the relevant table.</p>
+			<p>Another example is when using subqueries. Look at the query below. Is there any way to pare this down?</p>
+			<pre>
+				<code>
+				SELECT name
+				FROM employee
+				WHERE salary = (SELECT MAX(salary) FROM
+				employee_details)
+				AND age = (SELECT MAX(age) FROM
+				employee_details)
+				AND emp_dept = 'Electronics';
+				</code>
+			</pre>
+			<p>What if we combined the salary and age subqueries? Afterall, they both asking for something from the same information (employee_details)?</p>
+			<pre>
+				<code>
+				SELECT name
+				FROM employee
+				WHERE (salary, age) = (SELECT MAX(salary), MAX (age) FROM
+				employee_details)
+				AND emp_dept = 'Electronics';
+				</code>
+			</pre>
+			<p>Here are a few more tips:</p>	
+			<p>Use BETWEEN instead of max/min</p>
+			<p>use '%' when looking for words that contain certain characters. Ex. LIKE 'Char%' finds any words that begin with 'Char'.</p>
+			<p>Try not to use !=, do use <,>, etc.</p>
+			<p></p>
+		</div>
+		<div id="footer"><a href="index.html"><img src="home.png" height="27" width="27"></a></div>
+	</body>
+
+</html>
