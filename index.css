@@ -1,5 +1,5 @@
 html {
-	background-color: #EBE8E3;
+	background-image: url("wavegrid_@2X.png");
 }
 @font-face {
 	font-family: myralewayfont;
@@ -11,6 +11,7 @@ body {
 	border-radius: 1px;
 	margin: 0 auto;
 	vertical-align: middle;
+	margin-top: 10px;
 }
 #header {
 	background-color: #A6CC4A;
@@ -31,15 +32,26 @@ body {
 	height:100px;
 }
 #post {
-	background-color:#858471;
+	background-color:#C7C6BB;
 	text-align: center;
 	padding-top: 15px;
 	width:600px;
-	height:50px;
 }
 #footer {
 	border-top: 2px solid black;
 	position: relative;
 	text-align: center;
 	background-color: #A6CC4A;
+}
+#list {
+	background-color:#C7C6BB;
+	padding: 15px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
 }
