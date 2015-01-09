@@ -1,0 +1,71 @@
+html {
+	background-image: url("wavegrid_@2X.png");
+}
+@font-face {
+	font-family:myralewayfont;
+	src: url(stylesheets/raleway/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #C7C6BB;
+  text-align: center;
+  border: 2px solid black;
+  width:600px;
+  border-radius: 1px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+#title{
+	background-color: #A6CC4A;
+	text-align: center;
+	padding-top: 15px;
+	font-family: myralewayfont;
+	width:600px;
+	height:100px;
+	border-bottom: 2px solid black;
+}
+
+#by {
+	background-color:#E85;
+	text-align: center;
+	font-family: myralewayfont;
+	width:600px;
+	height:40px;
+	border-bottom: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#explain{
+  width:400px;
+  margin:0 auto;
+}
+
+img {
+  height:50%;
+  width:50%;
+}
+
+#cheatsheet {
+  text-align:left;
+  width: 600px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style:none;
+}
+
+p {
+width: 400px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
