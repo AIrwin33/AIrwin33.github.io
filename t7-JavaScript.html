@@ -14,54 +14,54 @@
 			</p>
 			<pre>
 				<code>
-			class Dishes
-				def initialize(dish)
-				@dish = dish;
-				end
+	class Dishes
+		def initialize(dish)
+		@dish = dish;
+		end
 
-				def dirty
-					if true
-						puts "Lets wash this dish!"
-						wash
-					else
-						return "This dish is already clean."
-					end
-				end
-
-				def wash
-					puts "This dish is clean now!"
-				end
+		def dirty
+			if true
+				puts "Lets wash this dish!"
+				wash
+			else
+				return "This dish is already clean."
 			end
+		end
 
-			plate = Dishes.new("plate")
-			p plate.dirty
+		def wash
+			puts "This dish is clean now!"
+		end
+	end
+
+	plate = Dishes.new("plate")
+	p plate.dirty
 				</code>
 			</pre>
 			<p>That was pretty straight forward. Now pay attention to how some of the syntax changes when I move this code into Javascript. How are different strings returned? How are functions called?</p>
 			<pre>
 				<code>
  				
- 			function dishes(dish) {
-				this.dish = dish;
+	function dishes(dish) {
+	this.dish = dish;
 
-				this.dirty = function(){
-					if (true) {
-						console.log("Lets wash this dish");
-						this.wash();
-					}
-					else {
-						console.log("This dish is already clean.");
-					}
-				}
+	this.dirty = function(){
+		if (true) {
+			console.log("Lets wash this dish");
+			this.wash();
+		}
+		else {
+			console.log("This dish is already clean.");
+		}
+	}
 
-				this.wash = function() {
-					console.log("This dish is clean now!");
-				}
-			}
+	this.wash = function() {
+		console.log("This dish is clean now!");
+	}
+	}
 
 
-			plate = new dishes("plate");
-			plate.dirty();
+	plate = new dishes("plate");
+	plate.dirty();
 
 
 				</code>
@@ -70,7 +70,7 @@
 			</p>
 			<p>When I worked on converting the Ruby code to JavaScript, I ran into a few issues that are important to note when working in JS. First, using a method with a question mark at the end is a big no-no in JavaScript. Also, while I use console.log to call the various string prompts, to call functions, I simply write that function and add a parenthesis at the end.</p>
 		</div>
-		<div id="footer"><a href="index.html"><img src="home.png" height="27" width="27"></a></div>
+		<div id="footer"><a href="blog-landing.html"><img src="home.png" height="27" width="27"></a></div>
 	</body>
 
 </html>
