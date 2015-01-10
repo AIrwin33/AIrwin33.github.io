@@ -7,14 +7,14 @@ html {
 }
 body {
 	border: 2px solid black;
+	border-radius: 5px;
 	width:600px;
-	border-radius: 1px;
 	margin: 0 auto;
 	vertical-align: middle;
 	margin-top: 10px;
 }
 #header {
-	background-color: #A6CC4A;
+	background-color: #FFF876;
 	text-align: center;
 	padding-top: 15px;
 	font-family: myralewayfont;
@@ -23,7 +23,7 @@ body {
 	border-bottom: 2px solid black;
 }
 #title {
-	background-color:#E85;
+	background-color:#5988CC;
 	text-align: center;
 	font-family: myralewayfont;
 	width:600px;
@@ -41,7 +41,15 @@ body {
 #footer {
 	border-top: 2px solid black;
 	text-align: center;
-	background-color: #A6CC4A;
+	background-color: #FFF876;
+}
+
+#list {
+	background-color:#C7C6BB;
+	line-height: 200%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
 }
 div ul {
 	text-align: center;
@@ -65,10 +73,12 @@ h4 {text-align: center;}
 
 a:link {
 	text-decoration: none;
+	color: black;
 }
 
 a:visited {
 	text-decoration: none;
+	color:black;
 }
 ul {
 	list-style-type: none;
